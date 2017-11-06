@@ -1,0 +1,34 @@
+<html>
+<head>
+	<script src="ocr.js"></script>
+	<link rel="stylesheet" type="text/css" href="ocr.css">
+</head>
+<body onload="ocrDemo.onLoadFunction()">
+    <div class="ocr-logo">
+        Optical Character Recognition
+        <div class="ann">
+            A Neural Network Project
+        </div>
+    </div>
+    
+    
+    <div class="topnav">
+        <ul class="right-links">
+            <li><a href="">About</a></li>
+            <li><a href="file:///C:/Users/999ab/Desktop/ocr.html">Demo</a></li>
+        </ul>
+    </div>
+    
+	<div id="main-container">
+        <p id="digit1">Draw Character here: <br>
+        <canvas id="canvas" width="200" height="200"></canvas>
+		<form name="input">
+			<p id="digit2">Approximated Digit is: <br><input id="digit" type="text"> </p>
+			<input type="button" value="Train" onclick="ocrDemo.train()">
+			<input type="button" value="Test" onclick="ocrDemo.test()">
+			<input type="button" value="Reset" onclick="ocrDemo.resetCanvas();"/>
+		</form>
+	</div>
+    
+</body>
+</html>
